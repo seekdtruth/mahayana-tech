@@ -10,4 +10,8 @@
     <PackageReference Include="ShuffleList" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PlayingCards.Core\PlayingCards.Core.csproj" />
+  </ItemGroup>
+
 </Project>
