@@ -6,12 +6,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingCards.Core", "Playin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingCards.Implementation", "PlayingCards.Implementation\PlayingCards.Implementation.csproj", "{164869D7-CB3F-4FBD-9ACC-048DCF7F3D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayingCard.Tests", "PlayingCard.Tests\PlayingCard.Tests.csproj", "{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlayingCard.Tests", "PlayingCard.Tests\PlayingCard.Tests.csproj", "{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A3AF19ED-576B-4BB6-9E07-0E9F36E7DFA3}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PlayingCards", "PlayingCards", "{A7710F79-8011-4227-A1E9-C575146BCFDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Games.Core", "Games.Core\Games.Core.csproj", "{1E517345-C4C3-497F-A77D-19DD0499615C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "..\Utilities\Utilities.csproj", "{99738E09-4BCB-43AE-AFB8-4E61BD87EDCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,9 +37,22 @@ Global
 		{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E517345-C4C3-497F-A77D-19DD0499615C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E517345-C4C3-497F-A77D-19DD0499615C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E517345-C4C3-497F-A77D-19DD0499615C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E517345-C4C3-497F-A77D-19DD0499615C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99738E09-4BCB-43AE-AFB8-4E61BD87EDCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99738E09-4BCB-43AE-AFB8-4E61BD87EDCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99738E09-4BCB-43AE-AFB8-4E61BD87EDCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99738E09-4BCB-43AE-AFB8-4E61BD87EDCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2CD23F6B-5D35-4529-9B04-1CA9965CF133} = {A7710F79-8011-4227-A1E9-C575146BCFDB}
+		{164869D7-CB3F-4FBD-9ACC-048DCF7F3D81} = {A7710F79-8011-4227-A1E9-C575146BCFDB}
+		{BD14D2BE-1318-44CD-AAB8-7A0116CBF19D} = {A7710F79-8011-4227-A1E9-C575146BCFDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {61A0D55B-3ECB-43A7-984E-F3944FCCFC55}
