@@ -1,5 +1,7 @@
 ﻿namespace PlayingCards.Implementation;
 
+using ListRandomizer;
+
 using PlayingCards.Core;
 
 public class CardPile : ICardPile
@@ -33,7 +35,7 @@ public class CardPile : ICardPile
     {
         cards = new List<ICard>();
 
-        while ( cardsToDraw >= this.cards.Count() && this.cards.TryDequeue(out var card) )
+        while ( this.cards.TryDequeue(out var card) )
         {
             cardsToDraw--;
             cards.Add(card);
@@ -54,6 +56,6 @@ public class CardPile : ICardPile
     public bool Peek() => this.cards.Any();
 
     /// <inheritdoc />
-    public void Shuffle() { }
+    public void Shuffle() => this.cards.ToList().Shuffle();
 }
 
