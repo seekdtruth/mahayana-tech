@@ -1,9 +1,12 @@
 ﻿namespace Games.Core;
 
+/// <summary>
+/// Represents an interface for an <see cref="IPlayer"/>.
+/// </summary>
 public interface IPlayer
 {
     /// <summary>
-    /// Player'sc current turn count.
+    /// Number of turns played.
     /// </summary>
     int TurnCount { get; set; }
 
