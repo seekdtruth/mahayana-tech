@@ -5,15 +5,21 @@ using System.Collections.ObjectModel;
 using PlayingCards.Core;
 using PlayingCards.Core.Types;
 
+/// <summary>
+/// Represents a <see cref="CardDeck"/>
+/// </summary>
+/// <seealso cref="ICardDeck" />
 public class CardDeck : ICardDeck
 {
     private readonly Collection<ICard> allCards;
 
     /// <summary>
-    /// Creates a new card deck.
+    /// Creates a new instance of a <see cref="CardDeck"/> object.
     /// </summary>
-    /// <returns></returns>
-    public CardDeck(int numberOfStandardDecks)
+    /// <param name="numberOfStandardDecks">The number of standard playing card decks to include in the <see cref="CardDeck"/></param>
+    /// <returns>A new <see cref="CardDeck"/> with the given number of decks.</returns>
+    /// <remarks>A standard playing card deck assumes 52 cards total with four suits and thirteen value cards per suit.</remarks>
+    public CardDeck(int numberOfStandardDecks = 1)
     {
         this.allCards = new Collection<ICard>();
 
@@ -86,6 +92,7 @@ public class CardDeck : ICardDeck
     public void ShuffleDrawPile() => this.DrawPile.Shuffle();
 
     /// <inheritdoc />
+    /// <exception cref="ArgumentOutOfRangeException">Thrown if a given card is not available to be discarded.</exception>
     public void Discard(params ICard[] cards) => this.DiscardPile.AddCards(cards);
 
     /// <inheritdoc />

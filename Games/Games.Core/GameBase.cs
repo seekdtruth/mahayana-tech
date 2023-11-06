@@ -2,8 +2,15 @@
 
 using Utilities;
 
+/// <summary>
+/// Represents an abstract class for an <see cref="IGame"/>.
+/// </summary>
 public abstract class GameBase : IGame
 {
+    /// <summary>
+    /// Initializes a new instance of <see cref="GameBase"/>.
+    /// </summary>
+    /// <param name="players">Players to be added to the game.</param>
     protected GameBase(params IPlayer[] players)
     {
         this.Players = !players.IsNullOrEmpty() ? new Queue<IPlayer>(players) : new Queue<IPlayer>();

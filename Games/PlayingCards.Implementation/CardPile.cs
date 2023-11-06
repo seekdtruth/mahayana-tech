@@ -4,10 +4,19 @@ using ListRandomizer;
 
 using PlayingCards.Core;
 
+/// <summary>
+/// Represents a <see cref="CardPile"/>.
+/// </summary>
+/// <seealso cref="ICardPile"/>
 public class CardPile : ICardPile
 {
     private readonly Queue<ICard> cards;
 
+    /// <summary>
+    /// Initializes an <see cref="ICardPile"/>.
+    /// </summary>
+    /// <param name="cards">The cards, if any, to add to the pile.</param>
+    /// <returns>An <see cref="ICardPile"/> with the given cards, if any.</returns>
     public static ICardPile CreatePile(params ICard[] cards)
     {
         var pile = new CardPile();
@@ -15,7 +24,11 @@ public class CardPile : ICardPile
         return pile;
     }
 
-    public CardPile()
+    /// <summary>
+    /// Creates a new instance of <see cref="CardPile"/>
+    /// </summary>
+    /// <param name="cards">The given cards to add to the pile, if any.</param>
+    public CardPile(params ICard[] cards)
     {
         this.cards = new Queue<ICard>();
     }

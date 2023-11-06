@@ -2,6 +2,9 @@ namespace Games.Core;
 
 using System.Collections.Generic;
 
+/// <summary>
+/// Represents an interface for a game.
+/// </summary>
 public interface IGame
 {
     /// <summary>
