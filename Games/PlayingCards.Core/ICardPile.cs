@@ -1,5 +1,8 @@
 ﻿namespace PlayingCards.Core;
 
+/// <summary>
+/// Represents an interface for an <see cref="ICardPile"/>
+/// </summary>
 public interface ICardPile
 {
     /// <summary>
